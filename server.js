@@ -3,8 +3,8 @@ var app = express();
 
 //creating a route
 
-app.get('/hello', function (req, res) {
-	res.send('Hello Rendani');
+app.get('/hello/:id', function (req, res) {
+	res.send('Hello	' + req.params.id);
 });
 
 //starting Server
